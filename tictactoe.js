@@ -102,11 +102,6 @@ function checkForClick(cell) {
 
             if (!freeSpace && !won) {
                 console.log('Tie');
-                for (let i = 0; i < cells.length; i++) {
-                    if (!cells[i].classList.contains("blank")){
-                    cells[i].style.backgroundColor = "#0000008a";
-                    }
-                }
                 restartButton.style.display = "inline-block";
                 tieMsg.style.display = "inline-block";
             }
